@@ -1,0 +1,14 @@
+**/*.aux
+**/*.bbl
+**/*.bcf
+**/*.blg
+**/*_latexmk
+**/*.fls
+**/*.log
+**/*.nav
+**/*.out
+**/*.xml
+**/*.snm
+**/*.gz
+**/*.toc
+**/.directory
