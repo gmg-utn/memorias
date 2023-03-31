@@ -12,3 +12,6 @@
 **/*.gz
 **/*.toc
 **/.directory
+**/*~lock.*
+**/*.synctex*
+
