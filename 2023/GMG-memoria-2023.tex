@@ -1,0 +1,685 @@
+\documentclass[a4paper,11pt,twoside,final,titlepage,onecolumn,openright]{report}
+\usepackage{fontspec} 
+\usepackage[xetex]{geometry} 
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont [Ligatures={Common}]{Linux Libertine O}
+\usepackage{microtype} 
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{tabularx, booktabs}
+\usepackage[lofdepth,lotdepth]{subfig}
+\usepackage{url}
+\usepackage[sorting=none, url=false, doi=true, eprint=false, isbn=false, maxnames=10]{biblatex}
+\addbibresource{gmg-2023.bib}
+
+\usepackage{verbatim}
+
+\usepackage{multicol}
+\usepackage{anysize} % Soporte para el comando \marginsize
+\marginsize{2.5cm}{2cm}{1.5cm}{1.5cm}
+\usepackage{hyperref}
+\hypersetup{
+  pdfauthor={},
+  pdftitle={GMG -- Memoria 2023},
+  colorlinks=True,
+  linkcolor=blue,
+  anchorcolor=black,
+  citecolor=blue,
+  urlcolor=blue,
+  pdftoolbar=false,
+}
+%\renewcommand{\labelitemi}{\faAngleRight}
+\renewcommand{\labelitemi}{\faCaretRight}
+
+
+\begin{document}
+
+\title{\textsc{Grupo de Materiales Granulares (GMG)}\\
+Memoria anual para el período 2023 \\
+Plan de trabajo 2024}
+\date{Abril 2024}
+
+%\maketitle
+
+\chapter*{}
+
+\begin{flushright}
+ ISSN 2618-1738
+\end{flushright}
+
+\vspace{5cm}
+\begin{center}
+
+\textbf{\LARGE \textsc{Grupo de Materiales Granulares (GMG)} \\[1em] \textsc{Memoria anual para el período 2023} \\[1em] \textsc{Plan de trabajo 2024}}
+
+\vspace{1cm}
+\textbf{\Large Abril 2024}
+\end{center}
+
+
+\chapter*{}
+
+\begin{center}
+
+\textbf{\LARGE UNIVERSIDAD TECNOLÓGICA NACIONAL} 
+
+\vspace{1cm}
+\textbf{\Large Rector}
+
+Ing. Rubén Soro
+
+\vspace{0.5cm}
+\textbf{\Large Secretario de Ciencia, Tecnología y Posgrado} 
+
+Ing. Omar Del Gener
+
+\vspace{5cm}
+
+\textbf{\LARGE FACULTAD REGIONAL LA PLATA} 
+
+\vspace{1cm}
+\textbf{\Large Decano} 
+
+Mg. Ing. Luis Agustín Ricci
+
+\vspace{0.5cm}
+\textbf{\Large Secretario de Ciencia, Tecnología y Posgrado}
+
+Dr. Ing. Gerardo Hugo Botasso
+ 
+\end{center}
+
+
+\tableofcontents
+
+\chapter{Administración}
+
+El GMG inició sus actividades en el Departamento de Ingeniería Mecánica de la Facultad Regional La Plata en mayo de 2012. Se genera mediante la fusión de un conjunto de investigadores especializados en mecánica estadística de medios granulares del Instituto de Física de Líquidos y Sistemas Biológicos (CONICET-UNLP) con jóvenes investigadores del Departamento de Ing. Mecánica de la UTN-FRLP a fin de potenciar las capacidades teórico-computacionales y experimentales y a la vez conjugar actividades de investigación básica y aplicada con actividades de transferencia de conocimiento y tecnología. El GMG fue homologado a fines del año 2013 por el Consejo Superior de la Universidad Tecnológica Nacional mediante la resolución 949/2013.
+		
+\vspace{0.5cm}
+{\bf Misión}
+
+\begin{itemize}
+ \item Generar conocimiento sobre el comportamiento de materiales granulares y materia activa mediante investigación básica y aplicada.
+ \item Llevar adelante desarrollos tecnológicos orientados a mejorar procesos que involucren materiales granulares y materia activa.
+ \item Formar recursos humanos con alta calificación en investigación y desarrollo para contribuir al progreso de los sistemas científico, educativo, productivo y administrativo así como de organizaciones gubernamentales y no gubernamentales.
+ \item Consolidar un grupo humano comprometido con objetivos comunes de mediano y largo plazo.
+\end{itemize}
+
+\vspace{0.5cm}
+{\bf Visión}
+
+\begin{itemize}
+ \item Convertirnos en un centro de generación de conocimiento y desarrollo tecnológico de vanguardia en el campo de los materiales granulares proveyendo a la industria de herramientas fundamentales para el diseño y optimización de procesos que involucren materiales granulares y materia activa.
+ \item Establecernos como un grupo de referencia en el área de los materiales granulares en el ámbito académico con extensiones a temáticas relacionadas en cuanto a lo fenomenológico y a lo instrumental.
+\end{itemize}
+
+\vspace{0.5cm}
+{\bf Actividades}
+\vspace{0.5cm}
+
+El GMG centra sus actividades de investigación y desarrollo en las siguientes áreas
+
+\begin{itemize}
+ \item Flujo y atasco de materiales granulares y de materia activa.
+ \item Compactación por vibración y cizalla.
+ \item Distribución de esfuerzos en materiales granulares y en contenedores.
+ \item Estados de la materia granular.
+ \item Propiedades disipativas de los medios granulares.
+ \item Mezcla y segregación.
+ \item Fluencia lenta.
+\end{itemize}
+
+Asimismo se ofrecen servicios de transferencia de conocimiento en las siguientes temáticas
+
+\begin{itemize}
+ \item Llenado y descarga de silos y tolvas.
+ \item Atascamiento en tolvas dosificadoras.
+ \item Transporte y deposición de granulados en matrices fluidas.
+ \item Amortiguación de vibraciones.
+ \item Evacuación de peatones en estado de pánico.
+ \item Compactación y fluidización de depósitos.
+ \item Diseño de contenedores.
+ \item Envejecimiento de depósitos granulares.
+ \item Metrología de materiales granulares.
+\end{itemize}
+
+El grupo contribuye además a la formación de grado y postgrado en el Departamento de Ingeniería Mecánica. Sus miembros son docentes en varias cátedras de grado y en cursos de doctorado. Algunos de sus miembros son también docentes de la Universidad Nacional de La Plata.
+
+\vspace{0.5cm}
+
+{\bf Resumen de actividades 2022}
+
+En el año 2022 se retomaron plenamente las actividades presenciales, luego de las fuertes restricciones de acceso a la Facultad iniciadas en 2020 como consecuencia de la pandemia provocada por el coronavirus SARS-CoV-2. El retorno a la normalidad hizo que fuese necesario dedicar esfuerzos a la recuperación de espacios y equipos que no habían recibido casi mantenimiento durante los años previos, lo que afectó principalmente a las tareas relacionadas con las actividades experimentales.
+
+Por otra parte, gran parte del trabajo de investigación y formación de recursos humanos se desarrolló normalmente, tal como se planificó el año anterior. Fue de particular utilidad la reconfiguración del clúster de cálculo realizado desde fines de 2021 y comienzos de 2022, que permitió mantener e intensificar las líneas de trabajo computacionales. Se dictaron normalmente los cursos de grado y de posgrado (agregando el dictado de un curso de posgrado internacional organizado por el \textit{New Jersey Institute of Technology} de Estados Unidos), así como los seminarios.
+
+En consecuencia, se publicaron once trabajos en revistas internacionales con referato (nueve en el primer cuartil, uno en el segundo y uno sin cuartil del ranking Scimago\footnote{\href{https://www.scimagojr.com/}{https://www.scimagojr.com/}}), se participó en cuatro congresos nacionales y dos internacionales, exponiendo un total de trece trabajos en presentaciones orales o póster y una publicación con referato en \textit{proceedings}.
+
+Se avanzó en el desarrollo de dos tesis doctorales, se continuó la ejecución de dos proyectos homologados UTN y se consolidó la cooperación con colegas de otros grupos en el país y en el extranjero. Finalmente, durante el 2022 se organizaron dos encuentros en nuestra Facultad: el primer \textit{workshop} regional sobre materiales granulares y el PyDay La Plata 2022.
+\vspace{0.5cm}
+
+{\bf Logros más importantes}
+
+Entre los logros más importantes podemos enumerar:
+
+\begin{itemize}
+\item Se publicaron once trabajos en revistas internacionales con referato, nueve de ellos en el primer cuartil del ranking Scimago y uno en el segundo.
+\item Se alcanzó una participación importante en congresos y reuniones científicas.
+\item Se desarrollaron en nuestra facultad cuatro cursos de posgrado con una alta participación de estudiantes del ámbito local y de otras provincias.
+\item Se organizaron dos jornadas científico-técnicas.
+\end{itemize}
+
+
+\section{Individualización del grupo}
+
+\subsection{Nombre y sigla}
+ Grupo de Materiales Granulares (GMG)
+
+ \subsection{Sede}
+\begin{quote}
+Departamento de Ingeniería Mecánica \\
+Facultad Regional La Plata\\
+Av. 60 Esq. 124\\
+1900 La Plata \\
+Tel: 0221 - 4124392\\
+Email: \href{mailto://granulares@frlp.utn.edu.ar}{granulares@frlp.utn.edu.ar}
+\end{quote}
+
+
+\subsection{Estructura de gobierno}
+Director: Carlos Manuel Carlevaro
+
+\subsection{Objetivos y desarrollo}
+Los objetivos propuestos en el plan de trabajo para el 2022 fueron alcanzados en gran medida. Se sostuvo el ritmo de publicaciones internacionales con referato superando la cantidad de publicaciones del año 2021. La presentación de trabajos en reuniones científicas fue menor que la del período anterior, no obstante alcanzó un número importante. En general, todos los miembros del grupo han participado en la elaboración de trabajos que fueron publicados o presentados en congresos.
+
+Se organizaron cinco seminarios abiertos durante el año, coordinados por el Dr. Ariel Meyra, lo que representa una disminución importante respecto del año anterior, como consecuencia de la organización del espacio ``Laboratorios abiertos'' organizado por la Secretaría de Ciencia y Tecnología de la Facultad, en el que los miembros del GMG participaron asistiendo y abriendo este ciclo. Los seminarios del GMG fueron dictados, en esta oportunidad, por expositores externos invitados. A diferencia del 2021, la implementación de los seminarios se realizó en forma híbrida, siendo presencial en la Facultad pero transmitido en forma de \textit{streaming} a través de la plataforma Zoom, lo que permitió la asistencia en forma remota de alumnos y expositores. Se organizaron dos jornadas en nuestra Facultad (un \textit{workshop} sobre materiales granulares y un \textit{PyDay} - Día Python). 
+
+Dos estudiantes de grado renovaron su beca de investigación, se incorporaron cuatro nuevos estudiantes (dos con becas Manuel Belgrano), y un graduado participó mediante una beca BINID. Uno de los becarios estudiantes se postuló y obtuvo una beca doctoral de CONICET, a desarrollarse en 2023. Los dos estudiantes doctorales del grupo avanzaron en sus investigaciones sin mayores inconvenientes, asistieron y aprobaron dos cursos de posgrado ( ``\textit{Physics and applications of granular matter}'' y ``Los laberintos del conocimiento científico, teorías, metodologías''), y participaron en la ``Jornada de Doctorandos en Ingeniería UTN 2022''.  El Dr. Marcos Madrid finalizó una estancia de investigación en la Universidad Politécnica de Madrid (España) mientras que el Dr. Ramiro Irastorza estuvo tres meses en el grupo Bio-MIT del Departamento de Ingenería Electrónica de la Universitat Politècnica de València (UPV), España. El Ing. Santiago Mosca realizó una estancia de entrenamiento de dos meses en el Institut de Recherche de Chimie Paris, dependiente de la École Nationale Supérieure de Chimie de Paris (Francia).
+
+Finalmente, concluyó exitosamente un proyecto PID, se presentaron a evaluación tres nuevos PID,  y se iniciaron dos nuevos proyecto financiados por la ANPCyT. En los primeros meses de 2022 se completó la actualización del sistema operativo y de administración del clúster de cálculo.
+
+En conclusión, los objetivos propuestos en la planificación de actividades del año 2022 se alcanzaron satisfactoriamente.
+
+\section{Personal}
+
+\subsection{Nómina de investigadores}
+
+{\small
+\begin{tabular}{l l l c c c}
+\toprule
+Apellido y nombre & Cargos & Dedicación & Categ. UTN & Incentivos & Horas$^a$ \\
+\midrule
+Baldini, Mauro           & JTP FRLP     & Simple &   &   & 10 \\
+Carlevaro, Carlos Manuel & Prof. Titular FRLP     & Simple & B  & III & 20 \\
+                         & Invest. Indep. CONICET    &  &   &\\
+Fernández, Matías        & Profesor Adjunto FRLP  & Exclusiva & D & & 30\\
+                         & JTP                    & Simple & & & \\
+Irastorza, Ramiro Miguel & Prof. Titular FRLP & Simple & C & III   & 15 \\
+                             & Invest. Adjunto. CONICET &   &  &  & \\
+Madrid, Marcos Andrés    & Invest. Asist. CONICET & & D & III & 40\\
+                         & JTP UNLP               & &  & & \\
+Meyra, Ariel Germán  & Prof. Adjunto  FRLP    & Simple & D & III & 15 \\
+                         & Invest. Adjunto. CONICET &   &  & &  \\
+\bottomrule 
+\end{tabular} 
+}
+
+\normalsize
+\vspace{0.5cm}
+$^a$ Sólo se cuenta la dedicación a la investigación sin sumar aquí las horas dedicadas a la docencia o actividades de extensión.
+
+
+\subsection{Personal profesional}
+No se cuenta con este tipo de personal.
+% \begin{tabular}{l l l r}
+% \toprule
+% Apellido y nombre & Cargos & Dedicación & Horas Investig.$^a$\\
+% \midrule
+% Rosenthal, Gustavo & Ayud. Primera FRLP & Semiexclusiva & 2\\
+% \bottomrule
+% \end{tabular}
+
+% \normalsize
+% \vspace{0.5cm}
+% $^a$ Sólo se cuenta la dedicación a la investigación sin sumar aquí las horas dedicadas a la docencia o actividades de extensión.
+
+
+\subsection{Personal técnico, administrativo y de apoyo}
+No se cuenta con este tipo de personal.
+
+% \begin{tabular}{l l r}
+% Apellido y nombre & Horas \\
+% \hline\hline\\
+% Marruedo Eric &  45\\
+% \hline \\
+% Cagnola Juan Pablo & 45 \\
+% \hline\hline 
+% \end{tabular}
+
+\subsection{Becarios y personal en formación}
+
+\subsubsection{Tesistas de maestría y/o doctorado}
+\begin{tabular}{l l l l r}
+\toprule
+Apellido y nombre & Tipo de tesis & Inicio & Financ. & Horas$^a$ \\
+\midrule
+Mosca, Santiago & Doc. Ing. Materiales & 10/2020 &  CONICET & 40\\
+Basiuk, Lucas & Doc. Ing. Materiales & 10/2020 &  CONICET & 40 \\
+\bottomrule
+\end{tabular}
+
+\normalsize
+\vspace{0.5cm}
+$^a$ Sólo se cuenta la dedicación a la investigación sin sumar aquí las horas dedicadas a la docencia o actividades de extensión.
+
+\subsubsection{Becarios graduados}
+
+ \begin{tabular}{l l l l r}
+ \toprule
+ Apellido y nombre & Tipo de Beca & Financ. & Horas \\
+ \midrule
+ Petri, Maximiliano & Beca BINID & UTN & 20\\
+ \bottomrule 
+ \end{tabular}
+
+\subsubsection{Becarios alumnos}
+
+\begin{tabular}{l l l l r}
+\toprule
+Apellido y nombre & Tipo de Beca & Financ. & Horas \\
+\midrule
+Carabajal, Tomás & Beca SCyT & UTN & 12 \\
+Gracia, César & Beca SCyT & UTN & 12 \\
+Kjolhede, Erik & Beca SCyT & UTN & 12 \\
+Mico, Nahuel & Beca Manuel Belgrano & UTN & 12 \\
+Nieva, Damián & Beca SCyT & UTN & 12 \\
+Ritchie, Dylan & Beca Manuel Belgrano & UTN & 12 \\
+\bottomrule 
+\end{tabular}
+
+ \subsubsection{Pasantes}
+\begin{tabular}{l l r}
+\toprule
+Apellido y nombre & Financ. & Horas \\
+\midrule
+Vatalaro, Giancarlo & Sin financiamiento & 5\\
+\bottomrule
+\end{tabular}
+
+\normalsize
+\vspace{0.5cm}
+
+% En virtud de las tareas de investigación llevadas a cabo por los becarios, todos solicitaron ingresar a la Carrera del Investigador UTN, obteniendo luego de la evaluación de sus solicitudes la categoría F (Basiuk, Petri, Recalt y Mosca).
+
+\section{Equipamiento e infraestructura}
+
+\subsection{Equipamiento e infraestructura principal disponible}
+
+El GMG cuenta con dos oficinas, un laboratorio y un cuarto para el cluster de cómputo. Los equipos principales con que se cuenta son
+
+\begin{itemize}
+ \item 1 Cluster de cómputo dedicado (248 procesadores con sistema de administración SLURM).
+ \item 1 Osciloscopio.
+ \item 1 Analizador de redes vectorial.
+ \item 2 Placas adquisidoras.
+ \item 2 Balanzas electrónicas.
+ \item 8 PC de escritorio y para control de dispositivos de laboratorio.
+ \item 1 Impresora láser B/N.
+ \item Fuente regulada/regulable.
+ \item Mobiliario básico de oficina y de laboratorio (escritorios, sillas, mesadas, mesas, armarios, etc.).
+ \item Herramientas básicas (llaves, taladro, soldador, multímetro, etc.).
+ \item Un banco de prueba para medición de tensiones en silos.
+ \item Un sistema robotizado para descarga de silos bidimensionales.
+ \item Un banco de prueba para flujo en configuraciones confinadas con bomba peristáltica.
+ \item Un agitador de varilla con conjunto soporte
+\end{itemize}
+
+
+\subsection{Locales y aulas}
+
+\begin{itemize}
+ \item {\bf Oficina:} Dos oficinas de 22 m$^2$. 
+ \item {\bf Cluster:} Cuarto de 4 m$^2$. 
+\end{itemize}
+
+\subsection{Laboratorios y talleres}
+
+\begin{itemize}
+ \item {\bf Laboratorio A:} Laboratorio de 20 m$^2$.
+ \item {\bf Laboratorio B:} Laboratorio de 6 m$^2$.
+\end{itemize}
+
+\subsection{Servicios generales}
+
+\begin{itemize}
+ \item {\bf Centro de mecanizado:} Servicio prestado por el Departamento de Ing. Mecánica.
+ \item {\bf Talleres:} Servicio prestado por el Departamento de Ing. Mecánica.
+ \item {\bf Biblioteca:} Servicio prestado por la Facultad Regional La Plata, y por la biblioteca propia del Departamento de Ingeniería Mecánica. Adicionalmente se cuenta con el servicio de biblioteca electrónica del Min. de Ciencia, Tecnología e Innovación Productiva. 
+\end{itemize}
+
+\subsection{Cambios significativos en el período}
+Durante el año 2022 se incorporó un agitador de varilla y conjunto soporte al equipamiento en el GMG.
+
+\section{Documentación y biblioteca}
+
+El GMG cuenta con una reducida biblioteca que incluye principalmente actas de congresos y libros de resúmenes de eventos científicos en los que han participado sus investigadores, como así también manuales de los instrumentos adquiridos. El material de consulta bibliográfico es mantenido por la biblioteca de la Facultad Regional La Plata, el Departamento de Ingeniería Mecánica y la biblioteca electrónica del Ministerio de Ciencia Tecnología e Innovación Productiva. 
+
+\chapter{Actividades I+D+i}
+
+\section{Investigaciones}
+
+\subsection{Proyectos en curso}
+
+\begin{itemize}
+  
+\item {\bf PID UTN:} MAUTILP0007746TC, 2020-2023, {\bf Flujo y transporte de material granular en sistemas de interés tecnológico}. Director: Manuel Carlevaro, codirector: Matías Fernández.
+ 
+{\bf Objetivos:} el objetivo general del presente proyecto consiste en contribuir al conocimiento, tanto básico como aplicado, relativo a las características y comportamiento de la materia granular en procesos dinámicos de flujo y transporte, en sistemas de interés en procesos industriales y tecnológicos. Si bien el comportamiento de la materia granular en procesos y dispositivos tecnológicos es muy diverso y complejo, se abordará la descarga de silos en dos y tres dimensiones, así como el transporte de material granular en fracturas angostas.
+
+ 
+{\bf Logros:} se estudiaron características universales en la dinámica \textit{stick-slip} de un intruso moviéndose en un medio granular con una geometría Couette en dos dimensiones. Se determinó que a bajos valores del factor de empaquetamiento ($\phi < \phi_0$), el intruso abre un canal por el que se desplaza sin obstrucciones, mientras que para valores mayores a $\phi_0$ se desarrolla una dinámica de \textit{stick-slip}, que es independiente de los coeficientes de fricción de las partículas entre si y con la base, pero depende del ancho del anillo y del diámetro del intruso.
+
+ 
+ {\bf Dificultades:} no se produjeron dificultades en el desarrollo del proyecto. 
+ 
+\item {\bf PID UTN:} MAUTNLP0006542, 2020-2022, {\bf Propiedades estructurales en carga y descarga de silos}. Director: Marcos Madrid, codirector: Manuel Carlevaro.
+ 
+{\bf Objetivos:} el objetivo general consiste en avanzar sobre la comprensión de los fenómenos que ocurren durante la manipulación de materiales granulares y su aplicación para mejorar tanto los procesos como los diseños y construcción. Como objetivos particulares proponemos: a) predecir la presión en el interior de un silo durante la carga y descarga para diferentes protocolos de llenado; b) predecir las presiones en el interior de un silo reforzado con tensores en diferentes configuraciones durante la carga y descarga del mismo.
+
+ {\bf Logros:} En el período 2022 se avanzó en la formación de una alumna del último año de la carrera de Licenciatura en Física de la Universidad Nacional de La Plata para realizar su trabajo de tesis de grado en simulaciones tipo DEM para simular diferentes condiciones de carga y descarga de silos así como en las tareas experimentales sobre los silos a escala del GMG. 
+ 
+ {\bf Dificultades:} no se produjeron dificultades en el desarrollo del proyecto. 
+
+\item \textbf{PICT ANPCyT:} PICT2020-SERIEA-00457, 2022-2024, {\bf Tomografía de microondas: algoritmos de reconstrucción, validación experimental y aplicaciones}. Director: Ramiro Irastorza.
+
+    \textbf{Objetivos:} La técnica de tomografía por microondas ha despertado gran interés durante la última década ya que permite obtener imágenes con fines médicos de manera no invasiva y con costos muy bajos comparados con otras técnicas de imágenes, por ejemplo, la resonancia magnética. En este proyecto se propone desarrollar métodos de reconstrucción de imágenes por microondas sobre un prototipo experimental desarrollado recientemente en IFLySiB-IAR con la finalidad de evaluar tejidos in-vivo. El presente plan contempla experimentos en laboratorio y la implementación de algoritmos clásicos de reconstrucción como así también el desarrollo de nuevos métodos basados en la teoría del sensado comprimido y la utilización de arquitecturas de inteligencia artificial conocidas como Deep-Learning. El desarrollo de este proyecto permitirá la consolidación del equipo de trabajo y la adquisición de know-how sobre esta nueva tecnología con perspectivas de aplicación a diversos campos de la salud (salud ósea, cáncer de mama, accidentes cerebrovasculares, etc.) como así también en aplicaciones industriales, por ejemplo, en la industria agroalimentaria (monitoreo de silos, determinación de nivel humedad de granos en línea, búsqueda de fallas y determinación de calidad de maderas, etc.).
+
+    \textbf{Logros:} se ha avanzado mucho en el desarrollo del software para la reconstrucción de imágenes en microondas (https://github.com/rirastorza/Intro2MI). Con este repositorio se busca, no solo resolver el problema de reconstrucción tomográfica, sino también formar a los potenciales estudiantes y becarias/os en la simulación de problemas electromagnéticos en microondas. Por el lado experimental, hemos caracterizado el dieléctrico de acoplamiento (mezclas de glicerol y agua) para diferentes temperaturas. También hemos comenzado con algunas mediciones de problemas con solución analítica como cilindros de propiedades conocidas.
+
+    \textbf{Dificultades:} El mayor inconveniente se presentó en la implementación de las antenas móviles. Se presentaron problemas en el material de construcción del setup experimental (mesa de madera y brazos de teflon). También los motores paso a paso estaban subdimensionados, los hemos reemplazado por otros.
+
+\item \textbf{PICT ANPCyT:} PICT-2020-SERIEA-I-GRF, 2022-2024, Análisis de propiedades tensionales en carga y descarga de silos. Director: Marcos Madrid, codirector: Ariel Meyra.
+
+    \textbf{Objetivos:} El objetivo principal del presente proyecto es avanzar en la comprensión de los fenómenos físicos que ocurren durante la manipulación (carga, descarga, almacenamiento) de materiales granulares. 
+
+    \textbf{Logros:} En el período 2022 se realizó la puesta en marcha y acondicionamiento de los equipos que habian quedado en desuso por la pandemia y se comenzó con los ensayos experimentales.
+
+    \textbf{Dificultades:} No se registraron dificultades durante este período.
+
+\item \textbf{PIP CONICET:} PIP 2021-2023 GI, 11220200100717CO, 2021-2023, Descarga forzada de materiales granulares. Director: Luis Pugnaloni, Co-Director: Marcos Madrid.
+
+    \textbf{Objetivos:} El objetivo general es mejorar nuestro conocimiento básico del comportamiento de materiales granulares. Esto nos permitirá eventualmente ayudar a mejorar procesos industriales que requieren el almacenamiento y manipulación de materiales granulares.
+
+    \textbf{Logros:} En el período 2022 se avanzó con los ensayos experimentales de descargas forzadas así como en la realización de diferentes simulaciones con pistón.
+
+    \textbf{Dificultades:} No hubo dificultades en la ejecución del proyecto durante 2022.
+
+\end{itemize}
+
+\subsection{Tesis}
+
+Se encuentran en desarrollo dos trabajos de tesis doctoral:
+\begin{itemize}
+ \item Santiago Mosca: ``Modelización de flujo y transporte en medios porosos''. Director: Manuel Carlevaro. Codirector: Federico Castez (Y-TEC, UNLP).
+ \item Lucas Osvaldo Basiuk: ``Diseño computacional de matrices para ingeniería de tejidos optimizadas de manera estocástica''. Director: Manuel Carlevaro. Codirector: Ramiro Irastorza.
+\end{itemize}
+
+Durante el año 2022, Lucas Basiuk obtuvo una Beca Doctoral de CONICET.
+
+\subsection{Congresos y reuniones científicas}
+
+{\bf Participación}
+
+\begin{enumerate}
+    \item \fullcite{cosapro2023}.
+    \item \fullcite{trefemac2023a}.
+    \item \fullcite{trefemac2023b}.
+    \item \fullcite{trefemac2023c}.
+    \item \fullcite{trefemac2023d}.
+    \item \fullcite{trefemac2023e}.
+    \item \fullcite{rafa2023}.
+    \item \fullcite{sab2023a}.
+    \item \fullcite{sab2023b}.
+\end{enumerate}
+
+\vspace{0.25cm}
+{\bf Organización}
+\vspace{0.5cm}
+
+El GMG organizó el ``Primer \textit{workshop} regional de materiales granulares'', el día 10 de mayo, contando con la asistencia de investigadores de la Universidad Nacional de La Pampa y de la Facultad de Ingeniería de la UBA, además de dos visitantes extranjeros y un investigador de YTEC S.A. Se expusieron charlas técnicas y se discutió sobre la oportunidad de sostener en el tiempo estas reuniones periódicas de la especialidad\footnote{Ver el programa de charlas aquí: \url{http://granulares.frlp.utn.edu.ar/es/talk/workshops/2022/2022-05-10/}.}. Además, el GMG organizó el encuentro ``PyDay La Plata 2022'' junto con la comunidad de Python Argentina, el día 17 de septiembre, en el que se brindaron charlas técnicas sobre el uso del lenguaje de programación Pyhton\footnote{Ver el cronograma de actividades aqui: \url{http://granulares.frlp.utn.edu.ar/es/talk/workshops/2022/2022-09-17/}.} Matías Fernández participó del Comité Organizador de la ``6 Jornada de Intercambio y Difusión de los Resultados de Investigaciones de los Doctorandos en Ingeniería''.
+
+\subsection{Otras actividades}
+
+\subsubsection{Visitas recibidas y realizadas}
+
+En ocasión del \textit{workshop} granular mencionado, se recibió la visita de Luis Pugnaloni y Paula Gago, exmiembros del GMG, actualmente en la Universidad Nacional de La Pampa y el Imperial College de Londres, respectivamente. También recibimos la visita de Lou Kondic, del \textit{New Jersey Institute of Technology}, quien participó, además del \textit{workshop}, en la organización y el dictado del curso de posgrado \textit{Physics and Applications of Granular Matter}. El Dr. Marcos Madrid finalizó una estadía de investigación en la Universidad Politécnica de Madrid, España, que inició en 2021 y se extendió por un año, para estudiar el efecto de la forma y rugosidad de las paredes en los patrones de descarga de silos. Por su parte, el Dr. Ramiro Irastorza realizó una estancia de tres meses de investigación en ``Ablación por radiofrecuencia: simulación y experimentos'' en el grupo Bio-MIT del Departamento de Ingeniería Electrónica de la Universitat Politècnica de València (UPV), España. El Ing. Santiago Mosca realizó una estancia de entrenamiento de dos meses en el Institut de Recherche de Chimie Paris, dependiente de la École Nationale Supérieure de Chimie de Paris (Francia).
+
+
+% 
+% \subsubsection{Visitantes recibidos}
+% 
+% \begin{itemize}
+%  \item {\bf Luis Pugnaloni:} julio y diciembre, 2019. Investigador de la Universidad Nacional de La Pampa.
+%  \item {\bf Lou Kondic:} julio 2019. Investigador del New Jersey Institute of Technology, Estados Unidos.
+% \end{itemize}
+% 
+% \subsubsection{Visitas realizadas}
+%  
+%  \begin{itemize}
+%   \item {\bf Manuel Carlevaro:} febrero 2019. Investigador visitante en el instituto de Química Física Rocasolano, Madrid, España.
+%  \end{itemize}
+
+\subsubsection{Otras}
+
+Los miembros del GMG participan además en las siguientes actividades académicas y de gestión relacionadas con la investigación:
+
+\begin{itemize}
+    \item \textbf{Subsecretario de Ciencia y Tecnología UTN-FRLP} Matías Fernández se desempeñó como Subsecretario de CyT durante 2022.
+
+  \item \textbf{Consejo Asesor de Ciencia Tecnología y Postgrado UTN-FRLP}: C. Manuel Carlevaro fue miembro de la comisión durante 2022. 
+  
+  \item \textbf{Referato de artículos para revistas internacionales}: durante 2022, C. Manuel Carlevaro fue revisor de artículos para las revistas \textit{Journal Of Petroleum Science And Engineering} (Elsevier Ltd.), \textit{Journal of Vibration and Control} (SAGE Publications Inc.), \textit{Frontiers in Physics} (Frontiers Media S.A.), \textit{Progress in Electromagnetics Research} (Electromagnetics Academy) e \textit{International Journal of Mechanical Sciences} (Elsevier Ltd.). R. Irastorza fue revisor de artículos en \textit{Physics in Medicine and Biology} (IOP Publishing Ltd.), \textit{International Journal of Hyperthermia} (Informa Healthcare) y \textit{Biomedical Physics \& Engineering Express} (IOP Publishing Ltd.). M. Fernández fue evaluador en las revistas \textit{Mecánica Tecnológica} (UTN - FRLP), \textit{Scientific Reports} (Nature Publishing Group) y \textit{Fliuds} (MDPI).
+ 
+ \item \textbf{Actividades de gestión editorial:} C. Manuel Carlevaro fue Editor Invitado de ``Special Issue on Soft Matter Research in Latin America'' de \textit{Journal of Physics: Condensed Matter}.
+ 
+     \item \textbf{Evaluación de personal de CyT}: C. Manuel Carlevaro fue Especialista Externo en la evaluación de la Convocatoria Solicitud de Ingreso a la Carrera del Investigador 2021 de CONICET y miembro de la Comisión Evaluadora para la Carrera Docente del Área Física de la Facultad de Ciencias Exactas y Naturales de la Universidad Nacional de La Pampa. R. Irastorza fue evaluador de la convocatoria Becas Maestría - Doctorado 2022 de la Universidad Nacional de La Plata.
+
+%\item \textbf{Jurados de tesis doctorales}: ?
+
+\item \textbf{Evaluación de proyectos de CyT}: C. Manuel Carlevaro fue evaluador de PICT de la Agencia Nacional de Promoción Científica y Tecnológica, en las áreas temáticas ``Ciencias Químicas'' y ``Tecnología Informática de las Comunicaciones y Electrónica''. R. Irastorza se desempeñó como Co-Coordinador de la comisión de Tecnología Informática, de las Comunicaciones y Electrónica en la evalución de Proyectos PICT de la Agencia Nacional de Promoción Científica y Tecnológica (ANPCYT); Ministerio de Ciencia, Tecnología e Innovación Productiva, y evaluador de proyecto del programa: ``Temas abiertos PICT-2021-I-A Temas Abiertos (I)'' de proyecto de FONCYT. 
+ 
+\item \textbf{Asociación Física Argentina:} C. Manuel Carlevaro se desempeñó como Vocal Titular en representación de la Filial La Plata en la Comisión Directiva, mientras que M. Madrid formó parte del comité ejecutivo de la división de Materia Blanda.
+ 
+\end{itemize}
+
+
+\subsection{Trabajos publicados}
+
+\subsubsection{Con referato}
+
+% \bibliographystyle{plain}
+% \begingroup
+% \makeatletter
+% \let\@bibitem\saved@bibitem
+% \nobibliography{gmg-2020}
+% \endgroup
+
+
+\begin{enumerate}
+    \item \fullcite{luque2023}.
+    \item \fullcite{barbosa2023}.
+    \item \fullcite{alvarez2023}.
+    \item \fullcite{cervantes2023}.
+    \item \fullcite{basak2023}.
+\end{enumerate}
+
+\subsubsection{Sin referato}
+No se publicaron trabajos sin referato.
+
+\subsubsection{En libros y actas de congresos}
+
+\begin{enumerate}
+    \item \fullcite{basiuk2022b}.
+\end{enumerate}
+
+\subsubsection{Informes y memorias técnicas}
+\begin{enumerate}
+ \item Memoria anual del GMG para el período 2021 (ISSN: 2618-1738).
+\end{enumerate}
+
+
+\subsubsection{Tareas de divulgación}
+
+El GMG inició el ciclo de encuentros ``Laboratorios Abiertos'' organizados por la Secretaría de Ciencia, Tecnología y Posgrado de la Regional La Plata. El 30 de marzo, M. Carlevaro expuso acerca de las actividades e investigaciones que se desarrollan en el grupo y los recursos disponibles.
+
+Por otra parte, y como es tradicional en el GMG, se realizaron cinco seminarios abiertos, en formato híbrido, que contaron con la participación de estudiantes, profesores e investigadores:
+\begin{itemize}
+    \item 14 de junio: Juan Arrospide (UTN FRLP) y Martín González Lucardi (Hospital Presidente Perón de Avellaneda). ``Vinculación de la ingeniería mecánica y el sistema de salud, un ejemplo de UTN-FRLP y hospitales públicos''.
+    \item 12 de julio: Santiago Mosca (GMG). ``Desarrollo de un modelo de difusión en medios porosos mediante autómatas celulares''.
+    \item 26 de agosto: Augusto Varela (Y-TEC S.A.). ``Caracterización integral de reservorios, tendiendo puentes entre las simplificaciones ingenieriles y las complicaciones geológicas de los recursos naturales del subsuelo''.
+    \item 13 de septiembre. Agustín Caferri (UTN FRLP). ``Reconocimiento de patrones climatológicos en imágenes satelitales mediante técnica de Machine Learning. Potenciales usos industriales''.
+    \item 22 de noviembre: Juan José Muriel (UTN FRLP). ``Molino rómbico, diseño y construcción''.
+\end{itemize}
+
+Finalmente, Marcos Madrid dictó el seminario titulado ``El desconcertante mundo de los materiales granulares'', en el ciclo de seminarios de sistemas complejos de la Universidad Politécnica de Madrid. {\color{red}Fecha?}
+
+\section{Registros y patentes}
+
+No se realizaron registros ni patentes.
+
+
+
+\chapter{Actividades en docencia}
+
+\section{Docencia de grado}
+
+Los integrantes del GMG se despempeñaron como docentes de las siguientes cátedras de la UTN-FRLP.
+
+\begin{itemize}
+ \item {\bf Mecánica de materiales granulares:} C. M. Carlevaro, Matías Fernández.
+ \item {\bf Mecánica de fluidos:} M. Baldini, S. Mosca.
+ \item {\bf Estimulación hidráulica de yacimientos no convencionales:} M. E. Fernández.
+ \item {\bf Introducción a los elementos finitos:} R. Irastorza y A. Meyra.
+ \item {\bf Cálculo Avanzado:} L. Basiuk.
+\end{itemize}
+
+Además se participa como docente en otras casas de altos estudios.
+
+\begin{itemize}
+ \item {\bf Matemática C (Facultad Ing. UNLP):} M. A. Madrid.
+\end{itemize}
+
+
+\section{Posgrado}
+
+Los docentes del GMG son docentes en los siguientes cursos de postgrado.
+
+\begin{itemize}
+ \item {\bf Herramientas computacionales para científicos:} R. Irastorza. A. Meyra y C. M. Carlevaro.
+ \item \textbf{Método de elementos finitos con software libre:} R. Irastorza y A. Meyra.
+ \item \textbf{Estimulación hidráulica de yacimientos no convencionales:} M. Fernández.
+ \item {\bf Análisis Estadístico utilizando R (Universidad Nacional Arturo Jauretche):} R. Irastorza.
+ \item \textbf{Physics and Applications of Granular Matter:} Lou Kondic (New Jersey Institute of Technology), Iker Zuriguel (Universidad de Navarra, Pamplona, España), Luis Pugnaloni (Universidad Nacional de La Pampa) y C. Manuel Carlevaro.
+
+%  \item {\bf Mecánica y mecánica estadística de materiales granulares:} L. A. Pugnaloni
+\end{itemize}
+
+\section{Otras actividades}
+
+El banco de pruebas de descarga de silos montado en los laboratorios del GMG se utiliza para que estudiantes de las cátedras de grado realicen trabajos prácticos experimentales sobre flujo de materiales granulares y distribución de tensiones en un silo. 
+
+M. Madrid se desempeñó como director de tesis de grado de Déborah Gozalez, y como codirector de tesis de grado de Ignacio Schulz, ambos alumnos de la Facultad de Ciencias Exactas de la Universidad Nacional de La Plata.
+
+M. Fernández fue editor de la revista Mecánica Tecnológica (ISSN: 2683-9148. Volumen 4, 2022), y participó en el Tribunal Evaluador del Proyecto Final de Carrera de doce estudiantes:  
+
+\begin{itemize}
+    \item Luis J.M. Sánchez. ``Proyecto de normalización de servicios industriales''.
+    \item Alexis E. Odorizzi, `` Instalación de calefacción por piso radiante''.
+    \item Agustina A. Rizzo, ``Monitoreo de sistemas de bombeo''.
+    \item Luano C. Guidi Garmendia, `` Calculo de bomba hidráulica para sistema de riego''.
+    \item Fernando N. Motillo, `` Proyecto de ampliación de una planta industrial de elaboración de aceites lubricantes''.
+    \item Matias H., Gandolfo, `` Manifold de vapor y laminadoras central II''.
+    \item Martin Bigurrarena, ``Obtención de rangos de corrección óptimos en mediciones de flujo de aire''.
+    \item Agustin Oxandaberro, ``Inspección de obra sobre RPN°86 y RN°226''.
+    \item Hernán Poncetta, ``Optimización topológica por el método TouNN''.
+    \item Ramiro Biglieri, ``Diseño y fabricación de Cámara criogénica para inspección y monitoreo de muestras crio preservadas en Nitrógeno líquido''.
+    \item Blas Iglesias, ``Diseño de refrigerador criogénico''.
+    \item Alan Jesus Martins, ``Banco de bomba Serie/Paralelo''.
+\end{itemize}
+
+
+
+\chapter{Vinculación con el medio socioproductivo}
+
+\section{Transferencia al medio socioproductivo}
+
+Durante el año 2022 se colaboró en el proyecto ``Desarrollo, caracterización y evaluación de agentes de sostén auto-suspendidos para la estimulación de reservorios no convencionales de hidrocarburos'' (PID 2016-0039) cuyo responsable es el Dr. Javier Amalvy del CITEMA, siendo la empresa adoptante YPF Tecnología S.A. (Y-TEC). Se realizaron simulaciones computacionales utilizando el \textit{software} CFDEM para analizar la conductividad en ensayos de agente de sostén sometidos a alta presión.
+
+Asimismo, se participó de la primera convocatoria del Fondo de Innovación Tecnológica de Buenos Aires (FITBA), presentando un proyecto en colaboración con la fábrica de implementos agrícolas Heedba, de la localidad de 9 de Julio, cuyo propósito es el de desarrollar un sistema que optimice el consumo energético para la refrigeración de silos. Dicho proyecto obtuvo el financiamiento para desarrollar el proyecto durante 2023.
+
+
+
+\chapter{Informe sobre rendición general de cuentas}
+
+Los valores presentados en la siguiente tabla son estimativos debido a que existen ingresos y erogaciones correspondientes a períodos diferentes del año 2022 dependiendo del inicio y cierre de los subsidios recibidos.
+
+\vspace{1cm}
+
+\begin{center}
+\begin{tabular}{ l c c c }
+ \toprule
+ \textbf{Proyecto} & \textbf{Ingresos (\$)} & \multicolumn{2}{c} {\textbf{Egresos (\$)}} \\
+            &           & \textbf{Capital} & \textbf{Corrientes} \\
+\midrule
+ UTN$^a$ & 158.000,00 & 118.500,00 & 39.500,00 \\
+ MAUTILP0007746TC & 43.400,00 & 38.000,00 & 5.400,00 \\
+ MAUTNLP0006542   & 27.950,00 & 26.500,00 & 1.450,00 \\
+ PICT2020-SERIEA-00457 & 160.000,00 & 50.000,00 & 110.000,00 \\
+ PICT-2020-SERIEA-I-GRF & 303.150,00 & 221.150,00 & 82.000,00 \\
+ PIP 2021-2023 GI & 368.000,00 & 253.000,00 & 115.000,00 \\
+ \midrule
+ \textbf{Total:} & 1.060.500,00 & 707.150,00 & 353.350,00 \\
+ \bottomrule
+\end{tabular}
+\end{center}
+
+
+\vspace{0.5cm}
+
+$^a$ Financiamiento de la SCTyP de la UTN para grupos homologados.
+
+
+\chapter{Programa de actividades 2023}
+
+Las actividades planificadas para el año 2023 son:
+
+\begin{itemize}
+\item Continuar con el desarrollo de los proyectos en ejecución:
+    \begin{itemize}
+    \item PID MAUTILP0007746TC: Caracterizar las cadenas de fuerzas en granos con forma pentagonal en el fenómeno de \textit{stick-slip} en una geometría Couette, y comparar con los resultados obtenidos para discos. Estudiar la formación de agregados magnéticos en sistemas confinados en dos dimensiones, mediante simulaciones computacionales y experimentos.
+\item PICT-2020-SERIEA-I-GRF-00457: Se realizarán mediciones de calibración con el prototipo desarrollado en medios canónicos (respuesta dieléctrica conocida) y se contrastarán con resultados analíticos y de simulación. Asimismo, se continuará con el desarrollo del \textit{software} de métodos directo e inverso.
+    \item PICT-2020-SERIEA-I-GRF-02611: Se avanzará en la caracterización del estado tensional de silos con paredes lisas y rugosas, tanto experimentalmente como a través de simulaciones computacionales.
+    \item PIP 11220200100717CO: Se desarrollarán experimentos para el análisis del estado tensional y estructural de descarga forzada de silos con diferentes configuraciones de llenado. Se intentará modelar computacionalmente estas configuraciones para obtener resultados numéricos complementarios.
+    \end{itemize}
+\item  Redactar y publicar al menos seis trabajos en revistas internacionales con referato, producto de las investigaciones en las líneas de trabajo actualmente en desarrollo en el GMG.
+\item  Participar en al menos tres congresos nacionales y uno internacional. 
+\item  Progresar en el desarrollo de los planes de tesis doctorales en curso.
+\item  Avanzar en la consolidación de las líneas de trabajo de los investigadores jóvenes. 
+\item  Incorporar becarios estudiantes y graduados. 
+\item  Continuar y consolidar las colaboraciones existentes con la empresa Y-TEC, el New Jersey Institute of Technology (USA), la Universidad de Navarra y el Instituto de Química Física Rocasolano (España). Mantener las colaboraciones activas con el Instituto de Física de Líquidos y Sistemas Biológicos, la Universidad Nacional de La Pampa, la Universidad de Buenos Aires y el Centro Atómico Bariloche.
+\item Desarrollar el proyecto FITBA A64 en colaboración con la fábrica de implementos agrícolas Heedba.
+\item  Dictar cursos de grado y posgrado.
+\item  Incorporar a becarios del GMG a la Carrera del Docente Investigador UTN.
+\item  Participar en las actividades que proponga la Secretaría de Ciencia y Tecnología de la Facultad Regional La Plata.
+\end{itemize}
+
+
+\end{document}
+ 
